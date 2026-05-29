@@ -2,49 +2,48 @@
 
 function mensagem(){
 
-    alert("🌱 Bem-vindo ao projeto Agrinho 2026!");
+    alert("🌱 Bem-vindo ao Projeto Agrinho!");
 
 }
 
-// TEXTO DINÂMICO
+// TÍTULO DINÂMICO
 
 const frases = [
 
-    "🌱 AGRINHO 2026",
-    "🚜 Agro Forte",
-    "🌍 Futuro Sustentável",
-    "💧 Preserve o Meio Ambiente"
+    "Agro Forte 🌾",
+    "Futuro Sustentável 🌍",
+    "Tecnologia no Campo 🚜",
+    "Preserve a Natureza 🌱"
 
 ];
 
-let index = 0;
+let i = 0;
 
 setInterval(() => {
 
-    document.getElementById("tituloHero").innerHTML =
-    frases[index];
+    document.getElementById("titulo").innerHTML =
+    frases[i];
 
-    index++;
+    i++;
 
-    if(index >= frases.length){
+    if(i >= frases.length){
 
-        index = 0;
+        i = 0;
 
     }
 
-},2500);
+},3000);
 
-// CONTADOR ANIMADO
+// CONTADOR
 
-let contador = 0;
-
-const numero = document.getElementById("numero");
+let numero = 0;
 
 setInterval(() => {
 
-    contador += 5;
+    numero += 10;
 
-    numero.innerHTML = contador + "+";
+    document.getElementById("numero").innerHTML =
+    numero + "+";
 
 },100);
 
